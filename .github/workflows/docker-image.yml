@@ -22,9 +22,9 @@ jobs:
         DOCKER_HUB_USER: ${{secrets.DOCKER_HUB_USER}}
         DOCKER_HUB_PASSWORD: ${{secrets.DOCKER_HUB_PASSWORD}}
       run: |
-        echo: "Iniciando Login"
+        echo "Iniciando Login"
         docker login -u $DOCKER_HUB_USER -p $DOCKER_HUB_PASSWORD
-        echo: "Login Fin"
+        echo "Login Fin"
 
     # - name: Build the Docker image
     #   run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
